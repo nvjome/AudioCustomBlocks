@@ -1,0 +1,2 @@
+AudioEffectPassthrough	KEYWORD2
+AudioEffectHardclip	KEYWORD2
