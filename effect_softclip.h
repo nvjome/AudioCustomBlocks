@@ -2,7 +2,7 @@
     Soft clipping effect.
     Limits an audio signal to a parameterized level while rounding off the transition.
 
-	Nolan Jome
+    Nolan Jome
 */
 
 #ifndef effect_softclip_h_
@@ -14,10 +14,10 @@
 class AudioEffectSoftclip : public AudioStream
 {
 public:
-	AudioEffectSoftclip() : AudioStream(1, inputQueueArray) {};
-	virtual void update(void);
+    AudioEffectSoftclip() : AudioStream(1, inputQueueArray) {};
+    virtual void update(void);
 private:
-	audio_block_t *inputQueueArray[1];
+    audio_block_t *inputQueueArray[1];
 };
 
 #endif

@@ -2,7 +2,7 @@
     Hard clipping effect.
     Limits an audio signal to a parameterized level.
 
-	Nolan Jome
+    Nolan Jome
 */
 
 #ifndef effect_hardclip_h_
@@ -14,14 +14,14 @@
 class AudioEffectHardclip : public AudioStream
 {
 public:
-	AudioEffectHardclip() : AudioStream(1, inputQueueArray) {
-		clipLevelInt = 32767;
-	};
-	virtual void update(void);
-	void clipLevel(float n);
+    AudioEffectHardclip() : AudioStream(1, inputQueueArray) {
+        clipLevelInt = 32767;
+    };
+    virtual void update(void);
+    void clipLevel(float n);
 private:
-	audio_block_t *inputQueueArray[1];
-	int16_t clipLevelInt;
+    audio_block_t *inputQueueArray[1];
+    int16_t clipLevelInt;
 };
 
 #endif
