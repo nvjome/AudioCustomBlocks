@@ -10,7 +10,7 @@
 
     Update function called by the Audio library every update cycle.
 */
-void OneToTwoSwitch::update(void) {
+void AudioOneToTwoSwitch::update(void) {
     audio_block_t *block;
 
     block = receiveReadOnly();

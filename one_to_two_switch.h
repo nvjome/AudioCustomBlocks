@@ -13,7 +13,7 @@
 #include "Arduino.h"
 #include "AudioStream.h"
 
-class OneToTwoSwitch : public AudioStream
+class AudioOneToTwoSwitch : public AudioStream
 {
 public:
     AudioOneToTwoSwitch() : AudioStream(1, inputQueueArray) {};
