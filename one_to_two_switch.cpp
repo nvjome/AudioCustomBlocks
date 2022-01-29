@@ -22,7 +22,7 @@ void AudioOneToTwoSwitch::update(void) {
     return;
 }
 
-void outputSelect(int chan) {
+void AudioOneToTwoSwitch::outputSelect(int chan) {
     if (chan >= 0 && chan <= 2) {
         channel = chan;
     }
