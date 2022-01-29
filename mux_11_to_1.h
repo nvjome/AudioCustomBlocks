@@ -7,16 +7,16 @@
     Nolan Jome
 */
 
-#ifndef ten_to_one_mux_h_
-#define ten_to_one_mux_h_
+#ifndef mux_11_to_1_h_
+#define mux_11_to_1_h_
 
 #include "Arduino.h"
 #include "AudioStream.h"
 
-class AudioTenToOneMux : public AudioStream
+class AudioMux11To1 : public AudioStream
 {
 public:
-    AudioTenToOneMux() : AudioStream(inPortCnt, inputQueueArray) {};
+    AudioMux11To1() : AudioStream(inPortCnt, inputQueueArray) {};
     virtual void update(void);
     void inputSelect(int chan);
 private:

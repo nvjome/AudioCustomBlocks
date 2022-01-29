@@ -3,27 +3,27 @@
 */
 
 #include "Arduino.h"
-#include "ten_to_one_mux.h"
+#include "switch_1_to_11.h"
 
 /*
     update()
 
     Update function called by the Audio library every update cycle.
 */
-void AudioTenToOneMux::update(void) {
+void AudioSwitch1To11::update(void) {
     audio_block_t *block;
 
-    block = receiveReadOnly(channel);
+    block = receiveReadOnly();
     if (!block) return;
 
-    transmit(block);
+    transmit(block, channel);
     release(block);
 
     return;
 }
 
-void AudioTenToOneMux::inputSelect(int chan) {
-    if (chan >= 0 && chan < inPortCnt) {
+void AudioSwitch1To11::outputSelect(int chan) {
+    if (chan >= 0 && chan < outPortCnt) {
         channel = chan;
     }
 }

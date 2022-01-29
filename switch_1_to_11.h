@@ -7,16 +7,16 @@
     Nolan Jome
 */
 
-#ifndef one_to_ten_switch_h_
-#define one_to_ten_switch_h_
+#ifndef switch_1_to_11_h_
+#define switch_1_to_11_h_
 
 #include "Arduino.h"
 #include "AudioStream.h"
 
-class AudioOneToTenSwitch : public AudioStream
+class AudioSwitch1To11 : public AudioStream
 {
 public:
-    AudioOneToTenSwitch() : AudioStream(1, inputQueueArray) {};
+    AudioSwitch1To11() : AudioStream(1, inputQueueArray) {};
     virtual void update(void);
     void outputSelect(int chan);
 private:
