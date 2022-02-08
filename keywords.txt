@@ -1,3 +1,3 @@
-AudioEffectPassthrough	KEYWORD2
-AudioEffectHardclip	KEYWORD2
-AudioOneToTenSwitch	KEYWORD2
+AudioEffectPassthrough	KEYWORD1
+AudioSwitch1To11	KEYWORD1
+AudioMux11To1	KEYWORD1
